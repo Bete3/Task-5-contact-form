@@ -1,0 +1,115 @@
+/* Basic Reset & Box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background to match the gradient style from the example */
+body {
+  background: linear-gradient(135deg, #7fd3f2, #89f7fe);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Container styles */
+.form-container {
+  max-width: 700px; /* Increased from previous size for larger inputs */
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 80px; /* More padding for larger size */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #222; /* Dark text for contrast */
+}
+
+/* Form groups */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+/* Focus styles for inputs and textarea */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Error styles */
+.input-error {
+  border-color: #e74c3c;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Submit button - larger size */
+button {
+  width: 100%;
+  padding: 15px; /* Larger padding for bigger button */
+  font-size: 18px; /* Larger font size */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Slightly bigger border radius */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover and focus styles for button */
+button:hover,
+button:focus {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+button:focus {
+  outline: 2px solid #fff; /* Focus outline for accessibility */
+}
+
+/* Success message */
+.success {
+  margin-top: 20px;
+  color: #28a745;
+  text-align: center;
+}
