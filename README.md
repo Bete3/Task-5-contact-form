@@ -14,5 +14,5 @@ A modern contact form built with **React** and **TypeScript**.
 
 <img width="669" height="413" alt="image" src="https://github.com/user-attachments/assets/6a8cdfb0-66e3-4029-a9ff-3e85b81c0df5" />
 
-## 📁 Project Structure
+
 
